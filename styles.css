@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 body {
     background: bisque;
 }
@@ -26,75 +25,77 @@ body {
     justify-content: space-around;
 }
 
+.navbar > a:hover {
+    transform: scale(1.2);
+}
+
 .navbar > a:visited {
     color: black;
 }
 
-main {
-    
-}
-
-main h2 {
-    align-self: center;
-}
-
-.about {
-    padding: 0 15vw 0 15vw;     
-}
-
-
-.about-wrapper {
+.content {
     display: flex;
-    gap: 1vw;
-    justify-content: space-around;
-    border: 6px inset rgb(57, 143, 241);
-    /* border-radius: 12rem; */
-    padding: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0vh 15vw 0vh 15vw;
 }
 
-.ivaylo-p {
+.sidebar {
+    flex: 0.25;
+}
+
+main {
+    display: flex;
+    flex: 0.75;
+}
+
+.sidebar h2 {
     align-self: center;
 }
 
-.ivaylo {
-    padding: 0 15vw 0 15vw;
-    /* background-color: rgb(57, 143, 241); */
+.question {
+    /* padding: 0 15vw 0 15vw;      */
 }
 
+.question-p {
+    align-self: center;
+}
 
-.ivaylo-wrapper {
+.question-wrapper {
+    
     display: flex;
     gap: 1vw;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 6px outset rgb(57, 143, 241);
-    /* border-radius: 12rem; */
+    border: 6px outset rgb(87, 85, 85);
     padding: 0.5rem;
-
-}
-
-.about-p {
-    align-self: center;
 }
 
 .ivaylo-img {
-    padding: 1em 0 1em 1em;
+    padding: 1em 1em 1em 1em;
     height: 25vh;
     border-radius: 50%;
     box-shadow: 5px black;
 }
 
+
 .hero {
     padding: 1vh 15vw 1vh 15vw;
-    /* background-color: bisque; */
+    background-color: rgb(87, 85, 85);
     display: flex;
     justify-content: space-around;
     gap: 1em;
     flex-wrap: wrap; 
+    flex-grow: 1;
 }
 
 .hero > img {
     border-radius: 8px;
+   
     height: 15em;
+    transition: all .2s ease-in-out;
+}
+
+.hero >img:hover {
+    transform: scale(1.1);
 }
 
