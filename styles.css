@@ -4,7 +4,6 @@
 }
 
 body {
-    
     background: bisque;
 }
 
@@ -41,8 +40,6 @@ body {
 }
 
 .content {
-    
-    backdrop-filter: blur(1000px);
     display: flex;
     flex-wrap: wrap;
     padding: 0vh 15vw 0vh 15vw;
@@ -54,7 +51,7 @@ body {
 
 main {
     display: flex;
-    flex: 0.75;
+    flex: 1;
 }
 
 .sidebar h2 {
