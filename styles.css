@@ -4,39 +4,49 @@
 }
 
 body {
-    background: bisque;
+    background-image: url("images/wall2.jpg");
+    background-size: contain;
 }
 
 .header {
-    padding: 0 15vw 0 15vw;
-    background-color: rgb(57, 143, 241);
+    padding: 1rem 15vw 0;
+    /* background-color: rgb(57, 143, 241); */
+    background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 1rem;
+    color: white;
 }
 
 .header > h1 {
-    align-self: center;
-    margin: 1rem 0 1rem 0;
-    border-top: 2px dotted white;
-    border-bottom: 2px dotted white;
+    background-color: black;
+    flex: 0.33;
+    padding: 0.5rem;
 }
 
 .navbar {
-    background-color: rgb(87, 85, 85, 0.8);
-    margin: 1rem 0 1rem 0;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 0 1rem 0;
-    border-top: 2px dotted white;
-    border-bottom: 2px dotted white;
+    justify-content:flex-start;
+    align-items: stretch;
+    /* gap: 1rem; */
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar > a {
+    text-decoration: none;   
+    padding: 0.5rem;
+    border-left: 1px solid white;
 }
 
 .navbar > a:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.1); */
+    background-color: rgb(57, 143, 241);
 }
 
 .navbar > a:visited {
-    color: black;
+    color: white;
 }
 
 .content {
@@ -46,20 +56,11 @@ body {
 }
 
 .sidebar {
-    flex: 0.25;
-}
-
-main {
-    display: flex;
-    flex: 1;
+    flex: 0.33;
 }
 
 .sidebar h2 {
-    align-self: center;
-}
-
-.question {
-    /* padding: 0 15vw 0 15vw;      */
+    align-self: center; 
 }
 
 .question-p {
@@ -68,13 +69,18 @@ main {
 }
 
 .question-wrapper {
-    
+    background-color: rgb(255, 255, 255, 0.8);
+    /* background-color: rgb(57, 143, 241, 0.8);  */
     display: flex;
     gap: 1vw;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 6px outset rgb(87, 85, 85);
+    border: 6px dotted rgb(87, 87, 87);
     padding: 0.5rem;
+}
+
+.question-wrapper.first-child {
+    border-top: 10px solid black;   
 }
 
 .ivaylo-img {
@@ -84,10 +90,15 @@ main {
     box-shadow: 5px black;
 }
 
+main {
+    display: flex;
+    flex: 1;
+}
 
 .hero {
     padding: 1rem;
-    background-color: rgb(87, 85, 85);
+    /* background-color: rgb(87, 85, 85, 0.8); */
+    background-color: rgb(57, 143, 241, 0.8); 
     display: flex;
     justify-content: space-around;
     gap: 1rem;
