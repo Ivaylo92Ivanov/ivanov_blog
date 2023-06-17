@@ -5,7 +5,7 @@
 
 body {
     background-image: url("images/wall2.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 
 .header {
@@ -98,9 +98,9 @@ main {
 .hero {
     padding: 1rem;
     /* background-color: rgb(87, 85, 85, 0.8); */
-    background-color: rgb(57, 143, 241, 0.8); 
+    background-color: rgb(57, 143, 241,0.); 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 1rem;
     flex-wrap: wrap; 
     flex-grow: 1;
@@ -114,5 +114,6 @@ main {
 
 .hero >img:hover {
     transform: scale(1.1);
+    opacity: 0.9;
 }
 
