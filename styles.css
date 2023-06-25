@@ -4,13 +4,13 @@
 }
 
 body {
-    background-image: url("images/wall2.jpg");
-    background-size: cover;
+    /* background-image: url("images/wall2.jpg"); */
+    /* background-size: cover; */
+    background-color: rgb(229, 219, 205, 0.1);
 }
 
 .header {
     padding: 1rem 15vw 0;
-    /* background-color: rgb(57, 143, 241); */
     background-color: black;
     display: flex;
     flex-wrap:wrap;
@@ -29,7 +29,6 @@ body {
     display: flex;
     justify-content:flex-start;
     align-items: stretch;
-    /* gap: 1rem; */
     font-size: 1.5rem;
     flex-wrap: wrap;
 }
@@ -54,17 +53,22 @@ body {
     flex-wrap: wrap;
     padding: 0vh 15vw 0vh 15vw;
     gap: 1rem;
+    
 }
 
 .sidebar {
-    flex: 0.33;
+    flex: 1;
     background-color: rgb(255,255,255,0.8);
     padding: 1rem;
-    border: 6px ridge black;
+    border: 2px ridge rgb(57, 143, 241);
+}
+
+.sidebar li {
+    margin-left: 1rem;
 }
 
 .sidebar h2 {
-    align-self: center; 
+    padding: 0.5rem; 
     
 }
 
@@ -77,28 +81,28 @@ body {
 
 main {
     display: flex;
-    flex: 1;
+    flex: 2;
 }
 
-.hero {
+.text-display {
     padding: 1rem;
-    /* background-color: rgb(87, 85, 85, 0.8); */
-    background-color: rgb(57, 143, 241); 
-    display: flex;
-    justify-content: flex-start;
+    background-color: rgb(255,255,255,0.8); 
+    flex: 1;
     gap: 1rem;
+    display: flex;
+    /* justify-content: flex-start; */
     flex-wrap: wrap; 
-    flex-grow: 1;
-    border: 6px ridge white;
+    object-fit: contain;
 }
 
-.hero > img {
+.text-display > img {
     border-radius: 8px;
-    height: 15em;
+    max-height: 25vh;
+    
     transition: all .2s ease-in-out;
 }
 
-.hero >img:hover {
+.text-display >img:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
@@ -110,7 +114,7 @@ main {
     color: white;
     align-items: center; 
     justify-content: center;
-    margin-top: 1.5rem; 
+    margin-top: max(1.5rem);     
 }
 
 .footer > a:visited {

@@ -1,0 +1,11 @@
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50vh;
+    width: 50vh;
+}
+
+p {
+    display: flex;
+    color: red;
+}
